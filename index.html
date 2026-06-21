@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
   <!-- ===================== ACA TU LINK CSS ===================== -->
   <title>TAWENO SUSHI</title>
 </head>
@@ -15,89 +15,208 @@
 <body>
 
   <!-- ===================== INICIO HEADER ===================== -->
+      <header>
 
-  <nav>
-    <a href="#">TAWENO SUSHI</a>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Menú</a></li>
-      <li><a href="#">Sobre nosotros</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-    <a href="#">Reservar</a>
-  </nav>
-
-  <span>Sushi auténtico desde 2017</span>
-  <h1>Sabor japonés<br><span>en cada pieza</span></h1>
-  <p>Ingredientes frescos del día. Tradición y técnica en cada preparación. Dos locales en Chile.</p>
-  <a href="#">Ver menú completo</a>
-  <a href="#">Reservar mesa</a>
+        <nav class="navbar">
+      
+          <a href="#" class="logo">TAWENO SUSHI</a>
+      
+          <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Menú</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+      
+          <a href="#" class="btn-reservar">Reservar</a>
+      
+        </nav>
+      
+        <div class="hero">
+      
+          <span class="pill">
+            Sushi auténtico desde 2017
+          </span>
+      
+          <h1>
+            Sabor japonés <br>
+            <span>en cada pieza</span>
+          </h1>
+      
+          <p>
+            Ingredientes frescos del día. Tradición y técnica en cada preparación. Dos locales en Chile.
+          </p>
+      
+          <div class="hero-botones">
+      
+            <a href="#" class="btn-menu">
+              Ver menú completo
+            </a>
+      
+            <a href="#" class="btn-secundario">
+              Reservar mesa
+            </a>
+      
+          </div>
+      
+        </div>
+      
+      </header>
 
   <!-- ===================== FIN HEADER ===================== -->
 
 
   <!-- ===================== INICIO NUESTRO MENÚ ===================== -->
 
-  <span>Selección del chef</span>
-  <h2>Nuestro menú</h2>
-  <a href="#">Ver todos los productos</a>
+  <section class="menu-section">
 
-  <img src="#" alt="Nigiri Salmón">
-  <h3>Nigiri Salmón</h3>
-  <p>Arroz con salmón fresco y wasabi.</p>
-  <span>$4.990</span>
-  <button type="button">+</button>
+    <div class="menu-header">
 
-  <img src="#" alt="Roll Spicy Tuna">
-  <h3>Roll Spicy Tuna</h3>
-  <p>Atún, pepino, palta y sésamo.</p>
-  <span>$6.490</span>
-  <button type="button">+</button>
+        <div>
+            <span class="menu-tag">SELECCIÓN DEL CHEF</span>
+            <h2>Nuestro menú</h2>
+        </div>
 
-  <img src="#" alt="Tempura Roll">
-  <h3>Tempura Roll</h3>
-  <p>Camarón tempura y salsa teriyaki.</p>
-  <span>$6.990</span>
-  <button type="button">+</button>
+        <a href="#" class="menu-link">Ver todos los productos</a>
 
-  <img src="#" alt="Sashimi Mix">
-  <h3>Sashimi Mix</h3>
-  <p>12 piezas premium variadas.</p>
-  <span>$9.990</span>
-  <button type="button">+</button>
+    </div>
+
+    <div class="menu-cards">
+
+        <article class="menu-card">
+            <img src="img/sushi1.jpg" alt="Nigiri Salmón">
+
+            <div class="card-info">
+                <h3>Nigiri Salmón</h3>
+                <p>Arroz con salmón fresco y wasabi.</p>
+
+                <div class="card-footer">
+                    <span class="price">$4.990</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="menu-card">
+            <img src="img/sushi2.jpg" alt="Roll Spicy Tuna">
+
+            <div class="card-info">
+                <h3>Roll Spicy Tuna</h3>
+                <p>Atún, pepino, palta y sésamo.</p>
+
+                <div class="card-footer">
+                    <span class="price">$6.490</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="menu-card">
+            <img src="img/sushi3.jpg" alt="Tempura Roll">
+
+            <div class="card-info">
+                <h3>Tempura Roll</h3>
+                <p>Camarón tempura y salsa teriyaki.</p>
+
+                <div class="card-footer">
+                    <span class="price">$6.990</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="menu-card">
+            <img src="img/sushi4.jpg" alt="Sashimi Mix">
+
+            <div class="card-info">
+                <h3>Sashimi Mix</h3>
+                <p>12 piezas premium variadas.</p>
+
+                <div class="card-footer">
+                    <span class="price">$9.990</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+</section>
 
   <!-- ===================== FIN NUESTRO MENÚ ===================== -->
 
 
   <!-- ===================== INICIO LOS MÁS PEDIDOS ===================== -->
 
-  <span>Favoritos</span>
-  <h2>Los más pedidos</h2>
-  <p>Los platos que nuestros clientes eligen semana a semana. Preparados al momento con ingredientes frescos.</p>
+  <section class="popular">
 
-  <ul>
-    <li>
-      <img src="#" alt="Miniatura Nigiri Salmón">
-      <span>Nigiri Salmón</span>
-      <small>Arroz con salmón fresco y wasabi</small>
-      <span>$4.990</span>
-      <small>+320 pedidos</small>
-    </li>
-    <li>
-      <img src="#" alt="Miniatura Roll Spicy Tuna">
-      <span>Roll Spicy Tuna</span>
-      <small>Atún, pepino, palta y sésamo</small>
-      <span>$6.490</span>
-      <small>+210 pedidos</small>
-    </li>
-    <li>
-      <img src="#" alt="Miniatura Tempura Roll">
-      <span>Tempura Roll</span>
-      <small>Camarón tempura y salsa teriyaki</small>
-      <span>$6.990</span>
-      <small>+185 pedidos</small>
-    </li>
-  </ul>
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="popular-left">
+  
+      <span class="popular-tag">Favoritos</span>
+  
+      <h2>Los más pedidos</h2>
+  
+      <p>
+        Los platos que nuestros clientes eligen semana a semana. Preparados al momento con ingredientes frescos.
+      </p>
+  
+    </div>
+  
+    <!-- COLUMNA DERECHA -->
+    <ul class="popular-list">
+  
+      <li class="popular-item">
+  
+        <img src="img/sushi1.jpg" alt="Nigiri Salmón">
+  
+        <div class="popular-info">
+          <span class="popular-name">Nigiri Salmón</span>
+          <small class="popular-desc">Arroz con salmón fresco y wasabi</small>
+        </div>
+  
+        <div class="popular-meta">
+          <span class="popular-price">$4.990</span>
+          <small class="popular-count">+320 pedidos</small>
+        </div>
+  
+      </li>
+  
+      <li class="popular-item">
+  
+        <img src="img/sushi2.jpg" alt="Roll Spicy Tuna">
+  
+        <div class="popular-info">
+          <span class="popular-name">Roll Spicy Tuna</span>
+          <small class="popular-desc">Atún, pepino, palta y sésamo</small>
+        </div>
+  
+        <div class="popular-meta">
+          <span class="popular-price">$6.490</span>
+          <small class="popular-count">+210 pedidos</small>
+        </div>
+  
+      </li>
+  
+      <li class="popular-item">
+  
+        <img src="img/sushi3.jpg" alt="Tempura Roll">
+  
+        <div class="popular-info">
+          <span class="popular-name">Tempura Roll</span>
+          <small class="popular-desc">Camarón tempura y salsa teriyaki</small>
+        </div>
+  
+        <div class="popular-meta">
+          <span class="popular-price">$6.990</span>
+          <small class="popular-count">+185 pedidos</small>
+        </div>
+  
+      </li>
+  
+    </ul>
+  
+  </section>
 
   <!-- ===================== FIN LOS MÁS PEDIDOS ===================== -->
 
